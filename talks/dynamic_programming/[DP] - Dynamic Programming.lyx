@@ -1,0 +1,2542 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass beamer
+\begin_preamble
+\DeclareMathAlphabet{\mathcal}{OMS}{cmsy}{m}{n}
+\usetheme[oldstylearrows,nologo,numbers,algorists]{CIMAT}
+
+% or ...
+
+\setbeamercovered{transparent}
+% or whatever (possibly just delete it)
+\usepackage[euler-digits]{eulervm}
+\usefonttheme{professionalfonts}
+\usepackage{dsfont}
+%\usepackage[table]{xcolor}
+%\usepackage{booktabs}
+
+%\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{tcolorbox}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{colortbl}
+\tcbuselibrary{skins,fitting}
+
+\newcolumntype{Y}{>{\raggedleft\arraybackslash}X}
+
+\DeclareMathOperator{\posdef}{+def}
+\DeclareMathOperator{\tr}{tr}
+\DeclareMathOperator{\cov}{cov}
+\DeclareMathOperator{\variance}{var}
+\DeclareMathOperator{\lcp}{lcp}
+\renewcommand{\mathbf}{\boldsymbol}
+\DeclareMathOperator{\idv}{div}
+\DeclareMathOperator{\diag}{diag}
+
+\SetKwInOut{Input}{Input}
+\SetKwInOut{Output}{Output}
+\SetKwInOut{Data}{Parameters}
+\SetKwInOut{Result}{output}
+\SetKw{struct}{struct}
+\SetKw{KwTo}{to}
+\SetKw{Throw}{throw}
+\SetKw{KwRet}{return}
+\SetKw{Return}{return}
+\SetKwProg{Function}{function}{:}{end}
+\SetKwProg{lFunction}{function}{}{}
+\SetKwBlock{Begin}{begin}{end}
+\SetKwRepeat{Repeat}{repeat}{until}
+\SetKwIF{If}{ElseIf}{Else}{if}{then}{else if}{else:}{end}
+\SetKwSwitch{Switch}{Case}{Other}{select}{for}{case}{otherwise}{end}{end}
+\usepackage{algpseudocode}
+\SetKwFor{For}{for}{do:}{end}
+\SetKwFor{ForPar}{parallel for}{do:}{end}
+\SetKwFor{ForEach}{for each}{do:}{end}
+\SetKwFor{ForAll}{for all}{do:}{end}
+\SetKwFor{While}{while}{do:}{end}
+
+\SetKw{Static}{static}
+\SetKw{Const}{const}
+\SetKw{Struct}{struct}
+\SetKw{Class}{class}
+\SetKw{New}{new}
+\SetKw{Delete}{delete}
+\SetKw{Char}{char}
+\SetKw{Integer}{int}
+\SetKw{Long}{long}
+\SetKw{Unsigned}{unsigned}
+\SetKw{Signed}{signed}
+\SetKw{Boolean}{bool}
+\SetKw{KwNot}{not}
+\SetKw{KwAnd}{and}
+\SetKw{KwOr}{or}
+\SetKw{KwXor}{xor}
+
+\SetKwFunction{node}{node}
+\SetKwFunction{sort}{std::sort}
+\SetKwFunction{lcp}{lcp}
+\SetKwFunction{strlen}{strlen}
+\SetKwFunction{strcmp}{strcmp}
+\SetKwFunction{fibonacci}{fibonacci}
+\SetKwFunction{pushback}{push-back}
+\SetKwFunction{alphanumeric}{to-alpha}
+\SetKwFunction{back}{back}
+\SetKwFunction{neighborhood}{neighborhood}
+\SetKwFunction{buildsuffix}{build-suffix-array}
+\SetKwFunction{isEmpty}{is-empty}
+\SetKwFunction{isNull}{is-null}
+\SetKwFunction{isBetter}{can-improve}
+\SetKwFunction{isUnvisited}{is-unvisited}
+\SetKwFunction{isValid}{is-valid}
+\SetKwFunction{improve}{visit-or-improve}
+\SetKwFunction{mycomparator}{cmp}
+
+\SetKwFunction{memset}{std::memset}
+\SetKwFunction{sizeof}{sizeof}
+\SetKwFunction{map}{std::map}
+\SetKwFunction{addword}{add-word}
+\SetKwFunction{findword}{find-word}
+\SetKwFunction{isEmpty}{is-empty}
+\SetKwFunction{isNull}{is-null}
+
+\SetSideCommentRight
+
+\newcolumntype{Y}{>{\raggedleft\arraybackslash}X}
+
+\tcbset{smallvalues/.style={enhanced,fonttitle=\bfseries,fontupper=\normalsize\sffamily,
+colback=zorange!10!white,colframe=zorange!90!black,colbacktitle=zorange!90!white,
+coltitle=white,center title}}
+\end_preamble
+\use_default_options false
+\begin_modules
+algorithm2e
+\end_modules
+\maintain_unincluded_children false
+\language british
+\language_package babel
+\inputencoding auto
+\fontencoding global
+\font_roman "times" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 0
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 0
+\use_package mhchem 1
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style french
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Dynamic Programming
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Dynamic Programming
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+optional, use only with long paper titles
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Author
+Ulises Tirado Zatarain
+\begin_inset space ~
+\end_inset
+
+ 
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Ulises Tirado Zatarain
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Flex InstituteMark
+status open
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+(ulises.tirado@cimat.mx) 
+\end_layout
+
+\begin_layout Institute
+\begin_inset Flex InstituteMark
+status collapsed
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+
+Algorists Group
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Algorists
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Date
+November, 2020
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Itemize
+Either use conference name or its abbreviation.
+ 
+\end_layout
+
+\begin_layout Itemize
+Not really informative to the audience, more for people (including yourself)
+ who are reading the slides online
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Nov, 2020
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pgfdeclareimage[height=0.75cm]{algorists}{algorists.png}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+logo{
+\backslash
+pgfuseimage{algorists}}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+AtBeginSubsection[]{
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+frame<beamer>{ 
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+frametitle{Outline}   
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+tableofcontents[currentsection,currentsubsection] 
+\end_layout
+
+\begin_layout Plain Layout
+
+  }
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+beamerdefaultoverlayspecification{<+->}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Outline
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Structuring a talk is a difficult task and the following structure may not
+ be suitable.
+ Here are some rules that apply for this solution: 
+\end_layout
+
+\begin_layout Itemize
+Exactly two or three sections (other than the summary).
+ 
+\end_layout
+
+\begin_layout Itemize
+At *most* three subsections per section.
+ 
+\end_layout
+
+\begin_layout Itemize
+Talk about 30s to 2min per frame.
+ So there should be between about 15 and 30 frames, all told.
+\end_layout
+
+\begin_layout Itemize
+A conference audience is likely to know very little of what you are going
+ to talk about.
+ So *simplify*! 
+\end_layout
+
+\begin_layout Itemize
+In a 20min talk, getting the main ideas across is hard enough.
+ Leave out details, even if it means being less precise than you think necessary.
+ 
+\end_layout
+
+\begin_layout Itemize
+If you omit details that are vital to the proof/implementation, just say
+ so once.
+ Everybody will be happy with that.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Subsection
+Definitions
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Definitions
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+What is dynamic programming?
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Definition
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Dynamic Programming
+\end_layout
+
+\end_inset
+
+ It's a technique for mathematical programming (optimization), or in other
+ words, a paradigm to problem solving.
+ So, the word 
+\begin_inset Quotes eld
+\end_inset
+
+programming
+\begin_inset Quotes erd
+\end_inset
+
+ is not directly meaning a computer program or an algorithm.
+ The actual meaning is more similar to linear programming or planning or
+ taking decisions.
+\end_layout
+
+\begin_layout Itemize
+It consists in:
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Split the problem in smaller sub-problems:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+recurrence relationship
+\end_layout
+
+\begin_layout Itemize
+optimal sub-structure
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+We stop when have a trivial problems (base cases)
+\end_layout
+
+\begin_layout Itemize
+Store smaller solutions (memoization, states) 
+\end_layout
+
+\begin_layout Itemize
+Merge the solutions when is need it
+\end_layout
+
+\begin_layout Itemize
+Difference with D&C: 
+\series bold
+overlapping and compute a value
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+A particular problem
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Recurrence relationship
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Fibonacci sequence (
+\begin_inset Formula $0,1,1,2,3,5,\ldots$
+\end_inset
+
+) is the simplest examples
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $F_{N}=\begin{cases}
+N & N\in\{0,1\}\\
+F_{N-1}+F_{N-2} & N>1
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Block
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Fibonacci numbers
+\end_layout
+
+\end_inset
+
+Given 
+\begin_inset Formula $Q$
+\end_inset
+
+ queries compute the 
+\begin_inset Formula $N$
+\end_inset
+
+-th Fibonacci number for each of them.
+ Each query is a single line with a single integer 
+\begin_inset Formula $N$
+\end_inset
+
+.
+ Your task is write a function which receives the integer 
+\begin_inset Formula $N$
+\end_inset
+
+ as input and should return the 
+\begin_inset Formula $N$
+\end_inset
+
+-th Fibonacci number.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Naive solutions and limitations
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Fibonacci classic iterative implementation
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{algorithm}[H]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+Const 
+\backslash
+Integer $MAX = 90$
+\backslash
+;
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+Function{
+\backslash
+Long 
+\backslash
+Integer 
+\backslash
+fibonacci{
+\backslash
+Integer $N$}}{
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+lIf{$n < 0$ 
+\backslash
+KwOr $N > MAX$}{
+\backslash
+Throw 
+\begin_inset Quotes fld
+\end_inset
+
+Out of range.
+\begin_inset Quotes frd
+\end_inset
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+Long $current=0$, $next=1$
+\backslash
+;
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+For{$k=1$ 
+\backslash
+KwTo $N$}{
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+Long $aux=current+next$
+\backslash
+;
+\end_layout
+
+\begin_layout Plain Layout
+
+		$current=next$
+\backslash
+;
+\end_layout
+
+\begin_layout Plain Layout
+
+		$next=aux$
+\backslash
+;
+\end_layout
+
+\begin_layout Plain Layout
+
+	}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+Return{$current$}
+\backslash
+;
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{algorithm}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Fibonacci classic recursive implementation
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{algorithm}[H]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+Const 
+\backslash
+Integer $MAX = 90$
+\backslash
+;
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+Function{
+\backslash
+Long 
+\backslash
+Integer 
+\backslash
+fibonacci{
+\backslash
+Integer $N$}}{
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+lIf{$N < 0$ 
+\backslash
+KwOr $N > MAX$}{
+\backslash
+Throw 
+\begin_inset Quotes fld
+\end_inset
+
+Out of range.
+\begin_inset Quotes frd
+\end_inset
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+lIf{$N < 2$}{
+\backslash
+Return{$N$}}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+Return{
+\backslash
+fibonacci{$N-1$} $+$ 
+\backslash
+fibonacci{$N-2$}}
+\backslash
+;
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{algorithm}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Problems with the classic implementations
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+visible<1->{
+\end_layout
+
+\end_inset
+
+In the iterative implementation we compute all the values for every query.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+visible<2->{
+\end_layout
+
+\end_inset
+
+In the recursive one, some values are computed twice (or more times), in
+ particular for 
+\begin_inset Formula $F(4)$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename figures/fibonacci-tree-redundance.png
+	lyxscale 50
+	scale 50
+	BoundingBox 100bp 170bp 1000bp 710bp
+	clip
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+visible<3->{
+\end_layout
+
+\end_inset
+
+This is called 
+\series bold
+overlapping
+\series default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Complexity?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+visible<1->{
+\end_layout
+
+\end_inset
+
+What is run time complexity for the iterative function? 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+visible<2->{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $O(N)$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+visible<3->{
+\end_layout
+
+\end_inset
+
+What is run time complexity for the recursive one? 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+visible<4->{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $O(2^{N})$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+visible<5->{
+\end_layout
+
+\end_inset
+
+What is the run time complexity for the whole program?
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+visible<6->{
+\end_layout
+
+\end_inset
+
+Iterative: 
+\begin_inset Formula $O(QN)$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+visible<7->{
+\end_layout
+
+\end_inset
+
+Recursive: 
+\begin_inset Formula $O(2^{N}Q)$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+visible<8->{
+\end_layout
+
+\end_inset
+
+What about the memory?
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+visible<9->{
+\end_layout
+
+\end_inset
+
+Iterative: 
+\begin_inset Formula $O(1)$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+visible<10->{
+\end_layout
+
+\end_inset
+
+Recursive: 
+\begin_inset Formula $O(N)$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+--Why?} 
+\backslash
+visible<11->{Stack}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Algorithm design
+\end_layout
+
+\begin_layout Subsection
+Design
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Design and implementations
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+There are two ways to implement dynamic programming:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Bottom-up (iterative implementation)
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Solve 
+\series bold
+all the the possible smaller problems
+\series default
+ before the bigger one
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Top-down (recursive implementation)
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Solve 
+\series bold
+only the instances which are actually needed
+\series default
+ for a given problem
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Both solve the problem in efficient way, the discussion may end up in 
+\begin_inset Flex Emphasize
+status open
+
+\begin_layout Plain Layout
+religious
+\end_layout
+
+\end_inset
+
+ arguments.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Fibonacci bottom-up implementation
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Algorithm
+Solve all the the possible smaller problems before the bigger one:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{algorithm}[H]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+Const 
+\backslash
+Integer $MAX = 90$
+\backslash
+;
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+Const 
+\backslash
+Long 
+\backslash
+Integer $UNDEFINED = -1$
+\backslash
+;
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+Long 
+\backslash
+Integer $memo[MAX + 1]$
+\backslash
+;
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+memset{$memo$, $UNDEFINED$, 
+\backslash
+sizeof{$memo$}}
+\backslash
+;
+\end_layout
+
+\begin_layout Plain Layout
+
+$memo[0]=0$; $memo[1]=1$
+\backslash
+;
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+Function{
+\backslash
+Long 
+\backslash
+Integer 
+\backslash
+fibonacci{
+\backslash
+Integer $N$}}{
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+lIf{$n < 0$ 
+\backslash
+KwOr $N > MAX$}{
+\backslash
+Throw 
+\begin_inset Quotes fld
+\end_inset
+
+Out of range.
+\begin_inset Quotes frd
+\end_inset
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+If{$memo[N]==UNDEFINED$}{
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+For{$k=2$ 
+\backslash
+KwTo $N$}{
+\end_layout
+
+\begin_layout Plain Layout
+
+			$memo[k]=memo[k-1]+memo[k-2]$
+\backslash
+;
+\end_layout
+
+\begin_layout Plain Layout
+
+		}
+\end_layout
+
+\begin_layout Plain Layout
+
+	}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+Return{$memo[N]$}
+\backslash
+;
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{algorithm}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Fibonacci top-down implementation
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Solve only the instances which are actually needed for a given problem:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{algorithm}[H]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+Const 
+\backslash
+Integer $MAX = 90$
+\backslash
+;
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+Const 
+\backslash
+Long 
+\backslash
+Integer $UNDEFINED = -1$
+\backslash
+;
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+Long 
+\backslash
+Integer $memo[MAX + 1]$
+\backslash
+;
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+memset{$memo$, $UNDEFINED$, 
+\backslash
+sizeof{$memo$}}
+\backslash
+;
+\end_layout
+
+\begin_layout Plain Layout
+
+$memo[0]=0$; $memo[1]=1$
+\backslash
+;
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+Function{
+\backslash
+Long 
+\backslash
+Integer 
+\backslash
+fibonacci{
+\backslash
+Integer $N$}}{
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+lIf{$N < 0$ 
+\backslash
+KwOr $N > MAX$}{
+\backslash
+Throw 
+\begin_inset Quotes fld
+\end_inset
+
+Out of range.
+\begin_inset Quotes frd
+\end_inset
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+lIf{$memo[N] 
+\backslash
+neq UNDEFINED$}{
+\backslash
+Return{$memo[N]$}}
+\end_layout
+
+\begin_layout Plain Layout
+
+	$memo[n]=$ 
+\backslash
+fibonacci{$N-1$} $+$ 
+\backslash
+fibonacci{$N-2$}
+\backslash
+;
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+Return{$memo[N]$}
+\backslash
+;
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{algorithm}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Analysis
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Complexity analysis
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+visible<1->{
+\end_layout
+
+\end_inset
+
+What is the run time complexity in both cases?
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+visible<2->{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $O(\max(Q,N))$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+visible<3->{
+\end_layout
+
+\end_inset
+
+And the memory complexity?
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+visible<4->{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $O(N)$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+visible<5->{
+\end_layout
+
+\end_inset
+
+Generally speaking, DP solutions have a run time complexity 
+\begin_inset Formula $O(M\times S)$
+\end_inset
+
+ and in memory 
+\begin_inset Formula $O(M)$
+\end_inset
+
+; where 
+\begin_inset Formula $M$
+\end_inset
+
+ is the number of sub-problems problem and 
+\begin_inset Formula $S$
+\end_inset
+
+ is the complexity of solving each sub-problem.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section
+More problems
+\end_layout
+
+\begin_layout Subsection
+Unidimensional problems
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Coin change (brainstorming/coding)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Block
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Coin change (
+\begin_inset CommandInset href
+LatexCommand href
+name "source: LeetCode"
+target "https://leetcode.com/problems/coin-change/"
+literal "false"
+
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+
+You are given coins of different denominations and a total amount of money
+ amount.
+ Write a function to compute the fewest number of coins that you need to
+ make up that amount.
+ If that amount of money cannot be made up by any combination of the coins,
+ return -1.
+ You may assume that you have an infinite number of each kind of coin.
+\end_layout
+
+\begin_layout Block
+
+\end_layout
+
+\begin_layout ExampleBlock
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Example
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout ExampleBlock
+
+\series bold
+Input
+\series default
+: coins = [1,2,5], amount = 11
+\end_layout
+
+\begin_layout ExampleBlock
+
+\series bold
+Output
+\series default
+: 3
+\end_layout
+
+\begin_layout ExampleBlock
+
+\series bold
+Explanation
+\series default
+: 11 = 5 + 5 + 1
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+David's staircase (brainstorming/coding)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Block
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+David's staircase (
+\begin_inset CommandInset href
+LatexCommand href
+name "source: HackerRank"
+target "https://www.hackerrank.com/challenges/ctci-recursive-staircase/problem"
+literal "false"
+
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+
+Davis has a number of staircases in his house and he likes to climb each
+ staircase 
+\begin_inset Formula $1,2$
+\end_inset
+
+ or 
+\begin_inset Formula $3$
+\end_inset
+
+ steps at a time.
+ Being a very precocious child, he wonders how many ways there are to reach
+ the top of the staircase.
+\end_layout
+
+\begin_layout Block
+Given the respective heights for each of the 
+\begin_inset Formula $s$
+\end_inset
+
+ staircases in his house, find and print the number of ways he can climb
+ each staircase, module 
+\begin_inset Formula $10^{10}+7$
+\end_inset
+
+ on a new line.
+\end_layout
+
+\begin_layout ExampleBlock
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Example
+\end_layout
+
+\end_inset
+
+For example, there is 
+\begin_inset Formula $s=1$
+\end_inset
+
+ staircase in the house that is 
+\begin_inset Formula $n=5$
+\end_inset
+
+ steps high.
+ David can step on up to 
+\begin_inset Formula $13$
+\end_inset
+
+ sequences of steps.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout FragileFrame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+David's staircase (brainstorming/coding)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout ExampleBlock
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Example (
+\begin_inset Formula $s=1,n=5$
+\end_inset
+
+ continuation...)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+lstparams "language={C++},numbers=left,numberstyle={\footnotesize},basicstyle={\footnotesize},tabsize=4"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+1 1 1 1 1
+\end_layout
+
+\begin_layout Plain Layout
+
+1 1 1 2
+\end_layout
+
+\begin_layout Plain Layout
+
+1 1 2 1 
+\end_layout
+
+\begin_layout Plain Layout
+
+1 2 1 1
+\end_layout
+
+\begin_layout Plain Layout
+
+2 1 1 1
+\end_layout
+
+\begin_layout Plain Layout
+
+1 2 2
+\end_layout
+
+\begin_layout Plain Layout
+
+2 2 1
+\end_layout
+
+\begin_layout Plain Layout
+
+2 1 2
+\end_layout
+
+\begin_layout Plain Layout
+
+1 1 3
+\end_layout
+
+\begin_layout Plain Layout
+
+1 3 1
+\end_layout
+
+\begin_layout Plain Layout
+
+3 1 1
+\end_layout
+
+\begin_layout Plain Layout
+
+2 3
+\end_layout
+
+\begin_layout Plain Layout
+
+3 2
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Multidimensional problems
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Multidimensional (homework challenge)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Block
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Knight on the chess board (
+\begin_inset CommandInset href
+LatexCommand href
+name "source: LeetCode"
+target "https://leetcode.com/problems/knight-probability-in-chessboard/"
+literal "false"
+
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Block
+On an 
+\begin_inset Formula $N\times N$
+\end_inset
+
+ chessboard, a knight starts at the 
+\begin_inset Formula $r$
+\end_inset
+
+-th row and 
+\begin_inset Formula $c$
+\end_inset
+
+-th column and attempts to make exactly 
+\begin_inset Formula $K$
+\end_inset
+
+ moves.
+ The rows and columns are 
+\begin_inset Formula $0$
+\end_inset
+
+ indexed, so the top-left square is 
+\begin_inset Formula $(0,0)$
+\end_inset
+
+, and the bottom-right square is 
+\begin_inset Formula $(N-1,N-1)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Block
+A chess knight has 
+\begin_inset Formula $8$
+\end_inset
+
+ possible moves it can make, as illustrated below.
+ Each move is two squares in a cardinal direction, then one square in an
+ orthogonal direction.
+\end_layout
+
+\begin_layout ExampleBlock
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Example
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout ExampleBlock
+
+\series bold
+Input
+\series default
+: 3, 2, 0, 0 
+\end_layout
+
+\begin_layout ExampleBlock
+
+\series bold
+Output
+\series default
+: 0.0625
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+More classic problems
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+More classic problems
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+We can find many applications of dynamic programming in several knowledge
+ areas (even if they are not necessary related with technology a priori):
+ militia, robotics, image processing, etc.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Longest Common Subsequence
+\end_layout
+
+\begin_layout Itemize
+Edit distance
+\end_layout
+
+\begin_layout Itemize
+Knapsack
+\end_layout
+
+\begin_layout Itemize
+Floyd-Warshall
+\end_layout
+
+\begin_layout Itemize
+Single-source Shortest Path
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+\start_of_appendix
+Appendix
+\end_layout
+
+\begin_layout Subsection*
+References
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 3
+status collapsed
+
+\begin_layout Plain Layout
+allowframebreaks
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+References
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+beamertemplatebookbibitems
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Introduction to Algorithms, Thomas H.
+ Cormen
+\end_layout
+
+\begin_layout Itemize
+\begin_inset CommandInset href
+LatexCommand href
+name "Algorists: Github Repository"
+target "https://github.com/Gansito144/algorists/tree/master/talks/dynamic_programming"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset CommandInset href
+LatexCommand href
+name "Wikipedia: Dynamic Programming"
+target "https://en.wikipedia.org/wiki/Dynamic_programming"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset CommandInset href
+LatexCommand href
+name "HackerRank"
+target "https://www.hackerrank.com"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset CommandInset href
+LatexCommand href
+name "CodeForces"
+target "https://codeforces.com"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset CommandInset href
+LatexCommand href
+name "OmegaUp"
+target "https://omegaup.com"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset CommandInset href
+LatexCommand href
+name "LeetCode"
+target "https://leetcode.com"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_body
+\end_document

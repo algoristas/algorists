@@ -1,0 +1,5 @@
+\beamer@endinputifotherversion {3.24pt}
+\beamer@sectionintoc {1}{\scshape Paradigm}{2}{0}{1}
+\beamer@sectionintoc {2}{\scshape Recurrences}{5}{0}{2}
+\beamer@sectionintoc {3}{\scshape Counting Inversions}{8}{0}{3}
+\beamer@sectionintoc {4}{\scshape Solving Recurrences}{24}{0}{4}

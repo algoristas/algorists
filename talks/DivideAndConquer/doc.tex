@@ -32,17 +32,17 @@
 \setbeamerfont{title like}{shape=\scshape}
 \setbeamerfont{frametitle}{shape=\scshape}
 
-\setbeamercolor*{lower separation line head}{bg=DeepSkyBlue4} 
-\setbeamercolor*{normal text}{fg=black,bg=white} 
-\setbeamercolor*{alerted text}{fg=red} 
-\setbeamercolor*{example text}{fg=black} 
-\setbeamercolor*{structure}{fg=black} 
- 
-\setbeamercolor*{palette tertiary}{fg=black,bg=black!10} 
-\setbeamercolor*{palette secondary}{fg=black,bg=black!10}
-\setbeamercolor*{palette quaternary}{fg=black,bg=black!10} 
+\setbeamercolor*{lower separation line head}{bg=DeepSkyBlue4}
+\setbeamercolor*{normal text}{fg=black,bg=white}
+\setbeamercolor*{alerted text}{fg=red}
+\setbeamercolor*{example text}{fg=black}
+\setbeamercolor*{structure}{fg=black}
 
-%% Set the background and font color of the blocks 
+\setbeamercolor*{palette tertiary}{fg=black,bg=black!10}
+\setbeamercolor*{palette secondary}{fg=black,bg=black!10}
+\setbeamercolor*{palette quaternary}{fg=black,bg=black!10}
+
+%% Set the background and font color of the blocks
 \setbeamercolor{block title}{bg=DeepSkyBlue4,fg=white}
 
 %% Set the type of the blocks
@@ -52,8 +52,8 @@
   \tikz[remember picture,overlay] {%
     \draw[DeepSkyBlue4] ([yshift=-1.5cm, xshift = 1cm]current page.north west)
              -- ([yshift=-1.5cm,xshift=\paperwidth-1cm]current page.north west);}}
-             
-\setbeamertemplate{section in toc}[sections numbered]           
+
+\setbeamertemplate{section in toc}[sections numbered]
 
 \renewcommand{\(}{\begin{columns}}
 \renewcommand{\)}{\end{columns}}
@@ -105,9 +105,8 @@
 Solves a problem \textbf{recursively} applying at each level of the recursion
 
 \begin{itemize}
-	\item {\scshape\textbf{DIVIDE}} the problem into smaller sub-problems.
-	\item {\scshape\textbf{CONQUER}} via recursive calls.
-	\item {\scshape\textbf{COMBINE}} solutions of sub-problems into one for the original problem.
+	\item {\scshape\textbf{DIVIDE}} the problem into smaller sub-problems via recursive calls.
+	\item {\scshape\textbf{CONQUER}} combining solutions of sub-problems into one for the original problem.
 \end{itemize}
 
 Also consider a \textbf{base case} when the sub-problems become small enough.
@@ -130,7 +129,7 @@ Also consider a \textbf{base case} when the sub-problems become small enough.
 \ENDIF
 \end{algorithmic}
 
-\end{minipage}\ \ 
+\end{minipage}\ \
 \begin{minipage}{5cm}
 
 \captionof*{algorithm}{}{{\scshape merge}($A, p, q, r$)}
@@ -177,14 +176,14 @@ Also consider a \textbf{base case} when the sub-problems become small enough.
 
 	$$
 	T(n) \leq a
-	$$	
-	
+	$$
+
 	\item consider the larger imputs as
-	
+
 	$$
 	T(n) \leq f(n)
 	$$
-	
+
 \end{itemize}
 
 %Recall $T(n)$ is the number of operation an algorithm requires to solve a problem.
@@ -199,14 +198,14 @@ Also consider a \textbf{base case} when the sub-problems become small enough.
 
 	$$
 	T(1) = 1
-	$$	
-	
+	$$
+
 	\item Larger inputs: two sub-problems of size $n/2$ plus one call to merge with size $n$, i.e.
-	
+
 	$$
 	T(n)=2T(n/2) + \Theta(n)
 	$$
-	
+
 \end{itemize}
 
 \framebreak
@@ -263,7 +262,7 @@ $$
 (3,2), (5,2), (5,4)
 $$
 
-\end{minipage}\ \ 
+\end{minipage}\ \
 \begin{minipage}{7cm}
 
 \begin{figure}
@@ -295,7 +294,7 @@ A brute force algorithm
 \ENDFOR
 \RETURN count
 \end{algorithmic}
-\end{minipage}\ \ \ \ 
+\end{minipage}\ \ \ \
 \begin{minipage}{5cm}
 
 It is correct but
@@ -352,7 +351,7 @@ The key idea to implement {\scshape Count-Split-Inversions} is to consider sorti
 	\item $A=$ output array.
 \end{itemize}
 
-\end{minipage}\ \ 
+\end{minipage}\ \
 \begin{minipage}{5cm}
 
 \captionof*{algorithm}{}{{\scshape merge}($A, p, q, r$)}
@@ -484,7 +483,7 @@ The split inversions involving an element $y_i\in C$ is the number of remaining 
 \ENDFOR
 \RETURN $inv, D$
 \end{algorithmic}
-\end{minipage}\ \ \ 
+\end{minipage}\ \ \
 \begin{minipage}{5cm}
 
 The recurrence is
@@ -538,19 +537,19 @@ At each level $j=0,1,...,log_2(n)$, there are $2^j$ subproblems of size $n/2^j$.
 \begin{itemize}
 	\item Base case: $T(n)\leq \alpha$ for sufficiently small n.
 	\item For larger $n$
-	
+
 		$$
 		T(n) \leq aT(n/b) + O(n^d)
-		$$	
+		$$
 
 	where
 		\begin{itemize}
 			\item[$a$] is the number of recursive calls ($\geq 1$).
 			\item[$b$] is the factor by which the input size shrinks ($>1$).
 			\item[$d$] exponent in summing time of combining step ($\geq 0$).
-		\end{itemize}			
-	
-	and $a,b,c\perp n$
+		\end{itemize}
+
+	and $a,b,d\perp n$
 \end{itemize}
 
 
@@ -561,7 +560,7 @@ At each level $j=0,1,...,log_2(n)$, there are $2^j$ subproblems of size $n/2^j$.
 
 {\LARGE
 $$
-T(n) = 
+T(n) =
 \begin{cases}
 O(n^d \log n) & \text{if $a = b^d$ (1)}\\
 O(n^d) & \text{if $a < b^d$ (2)}\\
@@ -603,7 +602,7 @@ $$
 \begin{algorithmic}[1]
 \IF{$p<r$}
 	\STATE $q = \floor*{(p+r)/2}$
-	\IF{$A[q]==a$} 
+	\IF{$A[q]==a$}
 		\STATE $i=q$
 	\ENDIF
 	\IF{$A[q] > a$}
@@ -614,7 +613,7 @@ $$
 \ENDIF
 \end{algorithmic}
 }
-\end{minipage}\ \ 
+\end{minipage}\ \
 \begin{minipage}{5cm}
 
 {\small
@@ -645,7 +644,7 @@ $$
 The recurrence is
 
 $$
-T(n) = 
+T(n) =
 \begin{cases}
 O(1) & \text{if $n = 1$}\\
 7T(n/2)+O(n^2) & \text{if $n>1$}
