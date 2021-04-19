@@ -1,0 +1,71 @@
+\ProvidesPackage{beamerthemeCIMAT}[2014/01/27]
+\def\beamercimat@version{1.0}
+
+% Copyright 2003      by Till Tantau  <tantau@users.sourceforge.net>
+%       and 2005-2006 by Jorg Cassens <jmt@cassens.org>
+%       and 2008-2012 by QU Xiaofeng  <quxiaofeng.at.polyu@gmail.com>
+%       and 2014-**** by Ulises Tirado <ulises.tirado@cimat.mx>
+%
+% This program can be redistributed and/or modified under the terms
+% of the GNU Public License, version 2.
+
+%\ifx\beamer@version\beamercimat@version
+%\else
+%	\PackageWarningNoLine{beamerthemeCIMAT}{This version of beamerthemeCIMAT (\beamercimat@version ) might not work with detected beamer class \beamer@version}
+%\fi
+
+\mode<presentation>
+
+\newif\ifbeamer@minimal
+\newif\ifbeamer@nonav
+\newif\ifbeamer@zatarain
+\newif\ifbeamer@algorists
+\newif\ifbeamer@red
+\newif\ifbeamer@numbers
+\newif\ifbeamer@shadow
+\newif\ifbeamer@nologo
+\newif\ifbeamer@polyu
+
+\beamer@minimalfalse
+\beamer@nonavfalse
+\beamer@redtrue
+\beamer@numbersfalse
+\beamer@shadowtrue
+\beamer@nologotrue
+
+\DeclareOptionBeamer{compress}{\beamer@compresstrue}
+\DeclareOptionBeamer{minimal}{\beamer@minimaltrue}
+\DeclareOptionBeamer{nonav}{\beamer@nonavtrue}
+\DeclareOptionBeamer{zatarain}{\beamer@zataraintrue}
+\DeclareOptionBeamer{algorists}{\beamer@algoriststrue}
+\DeclareOptionBeamer{numbers}{\beamer@numberstrue}
+\DeclareOptionBeamer{noshadow}{\beamer@shadowfalse}
+\DeclareOptionBeamer{nologo}{\beamer@nologofalse}
+
+\ProcessOptionsBeamer
+
+\ifbeamer@shadow
+	\useinnertheme[shadow=true]{rounded}
+\else
+	\useinnertheme{rounded}
+\fi
+\useoutertheme{cimat}
+
+\usecolortheme{cimat}
+\ifbeamer@zatarain
+	\usecolortheme{zatarain}
+\fi
+\ifbeamer@algorists
+	\usecolortheme{algorists}
+\fi
+
+\setbeamercolor{normal text}{fg=black,bg=white}
+
+\ifbeamer@nonav
+	\setbeamertemplate{navigation symbols}{}  % Removes navigation symbols.
+\fi
+
+\setbeamerfont{block title}{size={}}
+
+\mode
+<all>

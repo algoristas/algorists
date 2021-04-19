@@ -1,0 +1,116 @@
+\usepackage[ruled,vlined,linesnumbered]{algorithm2e}
+\usepackage{adjustbox}
+\DeclareMathAlphabet{\mathcal}{OMS}{cmsy}{m}{n}
+\usetheme[oldstylearrows,nologo,numbers,algorists]{CIMAT}
+
+\setbeamercovered{transparent}
+\usepackage[euler-digits]{eulervm}
+\usefonttheme{professionalfonts}
+\usepackage{dsfont}
+
+\usepackage{tcolorbox}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{colortbl}
+\tcbuselibrary{skins,fitting}
+
+\newcolumntype{Y}{>{\raggedleft\arraybackslash}X}
+
+\DeclareMathOperator{\posdef}{+def}
+\DeclareMathOperator{\tr}{tr}
+\DeclareMathOperator{\cov}{cov}
+\DeclareMathOperator{\variance}{var}
+\renewcommand{\mathbf}{\boldsymbol}
+\DeclareMathOperator{\idv}{div}
+\DeclareMathOperator{\diag}{diag}
+
+\SetKwInOut{Input}{Input}
+\SetKwInOut{Output}{Output}
+\SetKwInOut{Data}{Parameters}
+\SetKwInOut{Result}{output}
+\SetKw{struct}{struct}
+\SetKw{KwTo}{to}
+\SetKw{Throw}{throw}
+\SetKw{KwRet}{return}
+\SetKw{Return}{return}
+\SetKwProg{Function}{function}{:}{end}
+\SetKwProg{lFunction}{function}{}{}
+\SetKwBlock{Begin}{begin}{end}
+\SetKwRepeat{Repeat}{repeat}{until}
+\SetKwIF{If}{ElseIf}{Else}{if}{then}{else if}{else:}{end}
+\SetKwSwitch{Switch}{Case}{Other}{select}{for}{case}{otherwise}{end}{end}
+\usepackage{algpseudocode}
+\SetKwFor{For}{for}{do:}{end}
+\SetKwFor{ForPar}{parallel for}{do:}{end}
+\SetKwFor{ForEach}{for each}{do:}{end}
+\SetKwFor{ForAll}{for all}{do:}{end}
+\SetKwFor{While}{while}{do:}{end}
+
+\SetKw{Static}{static}
+\SetKw{Const}{const}
+\SetKw{Struct}{struct}
+\SetKw{Class}{class}
+\SetKw{New}{new}
+\SetKw{Delete}{delete}
+\SetKw{Char}{char}
+\SetKw{Integer}{int}
+\SetKw{Long}{long}
+\SetKw{Unsigned}{unsigned}
+\SetKw{Signed}{signed}
+\SetKw{Boolean}{bool}
+\SetKw{KwNot}{not}
+\SetKw{KwAnd}{and}
+\SetKw{KwOr}{or}
+\SetKw{KwXor}{xor}
+
+\SetKwFunction{node}{node}
+\SetKwFunction{sort}{std::sort}
+\SetKwFunction{strlen}{strlen}
+\SetKwFunction{strcmp}{strcmp}
+\SetKwFunction{fibonacci}{fibonacci}
+
+\SetKwFunction{memset}{std::memset}
+\SetKwFunction{sizeof}{size-of}
+\SetKwFunction{map}{std::map}
+\SetKwFunction{isempty}{is-empty}
+\SetKwFunction{isnull}{is-null}
+
+\SetSideCommentRight
+
+\newcolumntype{Y}{>{\raggedleft\arraybackslash}X}
+
+\tcbset{smallvalues/.style={enhanced,fonttitle=\bfseries,fontupper=\normalsize\sffamily,colback=zorange!10!white,colframe=zorange!90!black,colbacktitle=zorange!90!white,coltitle=white,center title}}
+
+\lstdefinelanguage{algorithm}{
+	keywords={
+		use, uses, using, include, import, alias,
+		program, class, mixin, union, struct, record, type, template, field, attribute, constructor,
+		destructor, event, delegate, operator, method, property, indexer, getter, setter, procedure,
+		global, local, static, extern, inherits, implementation, enumeration, interface, namespace,
+		unit, test, override, module, package, scope, virtual, abstract, private, final, public,
+		protected, overload, inline, define, macro,
+		and, in, out, is, as, not, or, xor, instance, size, of, new, delete, default, let,
+		assert, break, continue, else, do, to, repeat, until, throw, catch, finally, for, each,
+		if, unless, then, return, try, while, with, end, yield, select, switch, case, otherwise
+	},
+    keywords=[2]{
+		void, integer, character, boolean, bit, byte, short, const, file, pointer, reference, register,
+		unique, long, float, double, date, time, unsigned, signed, object, vector, array, string, map,
+		set, tree, hashset, treeset, bitset, hashmap, treemap, itrerator, stream, node, queue, stack,
+		heap, deque, list, pair, tuple, variant, optional, any, collection, container
+	},
+    sensitive=true,
+    morecomment=[l]{//},
+    morecomment=[s]{/*}{*/},
+    morestring=[b]",
+	morestring=[b]',
+}
+
+\newlength\codeheight
+\setlength\codeheight{1cm}
+
+\newcommand{\cplusplus}[2][3cm]{
+	\begin{adjustbox}{width=\textwidth,height=#1,keepaspectratio}
+  		\lstinputlisting[language=C++]{#2.cpp}
+	\end{adjustbox}
+}
