@@ -40,8 +40,8 @@ But what is an **algorithm**?
 
 # Interviews.
 
-* why?
-* are they even used in daily work?
+* Why?
+* Are they even used in daily work?
 
 ---
 
@@ -49,7 +49,8 @@ But what is an **algorithm**?
 
 * Moore's law can't continue forever.
 * With better technology, bigger challenges.
-* Parallelism.
+* Machine Learning and IA.
+* Parallelism / Distributed Systems.
 
 ---
 
