@@ -25,7 +25,7 @@ end
 ---
 
 # Definitions
-- Big $\mathcal{O}$ time/space is the lenguage and metric we use to describe the efficiency of algorithms.
+- Big $\mathcal{O}$ time/space is the language and metric we use to describe the efficiency of algorithms.
 - Imagine the following scenario:
   - You got a file on a hard drive and you need to send it to a friend who lives across the country. You need to get the file to your friend as fast as possible. How should you send it?
   - E-mail
