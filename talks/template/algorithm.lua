@@ -9,7 +9,7 @@ local function CodeBlock(element)
     end
 end
 
--- Override headers to make all beamer frames fragile, since any frane with lstlisting
+-- Override headers to make all beamer frames fragile, since any frame with lstlisting
 -- environments will halt compilation if the frame is not marked as fragile.
 function Header(element)
 	if FORMAT == 'beamer' then
